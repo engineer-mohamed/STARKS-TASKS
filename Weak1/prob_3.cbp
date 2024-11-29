@@ -1,41 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<CodeBlocks_project_file>
-	<FileVersion major="1" minor="6" />
-	<Project>
-		<Option title="prob_3" />
-		<Option pch_mode="2" />
-		<Option compiler="gcc" />
-		<Build>
-			<Target title="Debug">
-				<Option output="bin/Debug/prob_3" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-g" />
-				</Compiler>
-			</Target>
-			<Target title="Release">
-				<Option output="bin/Release/prob_3" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-O2" />
-				</Compiler>
-				<Linker>
-					<Add option="-s" />
-				</Linker>
-			</Target>
-		</Build>
-		<Compiler>
-			<Add option="-Wall" />
-		</Compiler>
-		<Unit filename="main.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Extensions>
-			<lib_finder disable_auto="1" />
-		</Extensions>
-	</Project>
-</CodeBlocks_project_file>
+#include <stdio.h>
+#include <stdlib.h>
+
+char char_one , char_two , char_three , char_four ;
+int main()
+{
+    printf("Enter four chars : ");
+    scanf("%c %c %c %c",&char_one,&char_two,&char_three,&char_four);
+    printf("the char One : %c \t ASCII is :%i \n",char_one,char_one);
+    printf("the char two : %c \t ASCII is :%i \n",char_two,char_two);
+    printf("the char three : %c \t ASCII is :%i \n",char_three,char_three);
+    printf("the char four : %c \t ASCII is :%i \n",char_four,char_four);
+    printf("previous char One :%c \t next char One :%c \n",char_one-1,char_one+1);
+    printf("previous char Two :%c \t next char Two :%c \n",char_two-1,char_two+1);
+    printf("previous char Three :%c \t next char Three :%c \n",char_three-1,char_three+1);
+    printf("previous char four :%c \t next char four :%c \n",char_four-1,char_four+1);
+    return 0;
+}

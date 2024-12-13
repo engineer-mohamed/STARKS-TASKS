@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1734047984 source:c:\users\loq\documents\c srarks\task3\prob_9\lab1.c
+	"lab1.h"
+
+1734047983 c:\users\loq\documents\c srarks\task3\prob_9\lab1.h
+
+1734047984 source:c:\users\loq\downloads\starks-tasks\weak3\prob_9\lab1.c
+	"lab1.h"
+
+1734047983 c:\users\loq\downloads\starks-tasks\weak3\prob_9\lab1.h
+
+1734048319 source:c:\users\loq\downloads\starks-tasks\weak3\prob_9\main.c
+	<stdio.h>
+	"lab1.h"
+	"main.h"
+
+1734047984 c:\users\loq\downloads\starks-tasks\weak3\prob_9\main.h
+

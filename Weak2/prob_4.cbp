@@ -1,41 +1,34 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<CodeBlocks_project_file>
-	<FileVersion major="1" minor="6" />
-	<Project>
-		<Option title="prob_4" />
-		<Option pch_mode="2" />
-		<Option compiler="gcc" />
-		<Build>
-			<Target title="Debug">
-				<Option output="bin/Debug/prob_4" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-g" />
-				</Compiler>
-			</Target>
-			<Target title="Release">
-				<Option output="bin/Release/prob_4" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-O2" />
-				</Compiler>
-				<Linker>
-					<Add option="-s" />
-				</Linker>
-			</Target>
-		</Build>
-		<Compiler>
-			<Add option="-Wall" />
-		</Compiler>
-		<Unit filename="main.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Extensions>
-			<lib_finder disable_auto="1" />
-		</Extensions>
-	</Project>
-</CodeBlocks_project_file>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int bottel_shampoo , father_use , mother_use , Takahashi_use ;
+    printf("Enter value bottel , father use , mother use ,Takahashi_use : ");
+    scanf("%i",&bottel_shampoo);
+    scanf("%i",&father_use);
+    scanf("%i",&mother_use);
+    scanf("%i",&Takahashi_use);
+    while (1) {
+        if (bottel_shampoo < father_use) {
+            printf("F\n");
+            break;
+        }
+        bottel_shampoo -= father_use;
+
+        if (bottel_shampoo < mother_use) {
+            printf("M\n");
+            break;
+        }
+        bottel_shampoo -= mother_use;
+
+        if (bottel_shampoo < Takahashi_use) {
+            printf("T\n");
+            break;
+        }
+        bottel_shampoo -= Takahashi_use;
+    }
+
+
+    return 0;
+}

@@ -4,7 +4,7 @@
 
 int main() {
 
-char num[20]; // assuming input is up to 20 digits
+char num[20]; 
 
 int counts[10] = {0};
 
